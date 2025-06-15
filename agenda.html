@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcelo Mendes | Personal Online</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Metatags para redes sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Treine com Marcelo Mendes" />
+  <meta property="og:description" content="Transforme seu corpo com orientação profissional. Treinos personalizados com Marcelo Mendes, Personal Trainer." />
+  <meta property="og:image" content="https://www.seusite.com/imagem.jpg" />
+  <meta property="og:url" content="https://www.seusite.com" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .redes a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
+    @media (max-width: 576px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <h1 class="fs-3">Marcelo Mendes | Personal Online</h1>
+      <p class="mb-0">Treinamento personalizado onde você estiver</p>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+      <a class="navbar-brand" href="#">MM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Hero -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
+    <h2>Transforme seu corpo com Marcelo Mendes</h2>
+    <p class="mb-4">Alcance seus objetivos com treinos feitos sob medida para você</p>
+    <div class="d-flex flex-column flex-md-row gap-2 justify-content-center">
+      <a href="https://wa.me/55SEUNUMERO" class="btn btn-warning btn-lg">Fale no WhatsApp</a>
+      <a href="#servicos" class="btn btn-light btn-lg">Conheça os Planos</a>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="container py-5 text-center">
+    <h2>Sobre Marcelo</h2>
+    <p>Marcelo Mendes é Personal Trainer com mais de 10 anos de experiência em transformar vidas através da atividade física.</p>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Serviços</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-center">Treinamento personalizado online</li>
+            <li class="list-group-item text-center">Consultoria mensal com ajustes</li>
+            <li class="list-group-item text-center">Planilhas para academia ou casa</li>
+            <li class="list-group-item text-center">Acompanhamento via WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="container py-5 text-center">
+    <h2>Entre em Contato</h2>
+    <p>Fale com Marcelo e comece sua transformação agora!</p>
+    <a href="https://wa.me/55SEUNUMERO" class="btn btn-success btn-lg">WhatsApp</a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Marcelo Mendes - Todos os direitos reservados</p>
+    <div class="redes mt-2">
+      <a href="https://www.instagram.com/SEUINSTAGRAM" target="_blank">📷</a>
+      <a href="https://www.youtube.com/SEUYOUTUBE" target="_blank">▶️</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scroll suave -->
+  <script>
+    document.querySelectorAll('a.nav-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
